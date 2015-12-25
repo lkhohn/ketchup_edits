@@ -1,0 +1,27 @@
+appointments = { id: 1,
+   creator_id: '1',
+   invite_id: '2',
+   loc_lat: '42.25',
+   loc_lng: '40.52',
+   start_datetime: null,
+   duration: null,
+   description: 'This is a meeting!',
+   creator_confirm: 1,
+   invite_confirm: 2,
+   location_id: '1' },
+
+locations = { id: 1, name: 'Starbucks' }
+
+
+preferences = { id: 1,
+    user_id: '1',
+    avatar_url: 'https://avatars0.githubusercontent.com/u/15253124?v=3&s=460 (23KB)
+
+',
+    googleCal_url: null }
+    
+users = { id: 2,
+     username: 'john@jack.com',
+     password: 'pass123',
+     salt: '1',
+     email: 'john@jack.com' }

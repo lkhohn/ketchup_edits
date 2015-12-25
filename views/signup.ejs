@@ -1,0 +1,129 @@
+
+<!doctype HTML>
+
+<html>
+
+<head>
+  <!-- setting viewport size for easier prediciton of scale -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- begin bootstrap code -->
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- end bootstrap code/ begin css entry -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+</head>
+
+
+
+<body>
+  <!-- navbar area -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href= <%=linkHome %> >ketchUp</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul id='nav' class="nav navbar-nav">
+          <li class='active'><a href= <%=linkHome %> >home <span class="sr-only"</span></a></li>
+          <li><a href= <%=linkApt %> >schedule a meeting</a></li>
+        </ul>
+        <ul id='nav' class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">account <span class="caret"></span></a>
+            <ul id='nav' class="dropdown-menu">
+              <li><a href= <%=linkPref %> >preferences</a></li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <a href= <%=linkLogout %>
+                  <span class="badge"></span>
+                  <span class="glyphicon glyphicon-off" aria-hidden="true"></span> log out</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- end navbar area-->
+    <div class="bigBox">
+      <div class="row">
+      <div class="leftspace col-md-3">
+      </div>
+      <div class="signupForm col-md-6">
+        <div class="row">
+          <div class ="leftBox col-md-4">
+          </div>
+        <div class="title col-md-4"> WELCOME PLEASE SIGN UP<br> </div>
+        <div class ="leftBox col-md-4">
+        </div>
+      </div>
+        <form action="/signup" method="post">
+           <div class="signUpBox"><label for="username">Enter a Username<br>
+             <input type="text" name="username" placeholder="Put your Username here!"></input>
+           </label>
+         </div>
+           <div class="signUpBox"><label for="email">Enter an Email<br>
+             <input type="text" name="email" placeholder="What's your favorite ID?"></input>
+           </label>
+           </div>
+           <div class="signUpBox"><label for="password">Create a Password<br>
+             <input type="password" name="password" placeholder="shhhh don't tell anybody"></input>
+           </label>
+           </div>
+           <div class="signUpBox"><label for="confirm_password">Confirm Password<br>
+             <input type="password" name="confirm_password" placeholder="They can see it"></input>
+           </label>
+           </div>
+           <div class ="submitButton">
+           <button type="submit">Submit</button>
+         </div>
+         </form>
+       </div>
+       <div class="rightSpace col-md-3">
+       </div>
+     </div>
+   </div>
+
+
+   <div class="panel panel-default">
+     <div class="panel-footer">
+       <div class='row'>
+         <div class='col-md-6'>
+           <ul class='panel-footer-left'>
+             <ol><a href= <%=linkHome %> >home </a></ol>
+             <ol><a href= <%=linkApt %> >schedule a meeting</a></ol>
+             <ol><a href= <%=linkPref %> >preferences</a></ol>
+           </ul>
+         </div>
+         <div class='col-md-6'>
+           <ul class='panel-footer-right'>
+             <ol>designed by</ol>
+             <ol><a href='https://github.com/micah-eberhard'>Micah Eberhard </a></ol>
+             <ol><a href='https://github.com/KeenanHoffman'>Keenan Hoffman </a></ol>
+             <ol><a href='https://github.com/lkhohn'>Lindsay Hohn </a></ol>
+             <ol><a href='https://github.com/James80401'>James Shields </a></ol>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+
+
+
+
+
+</html>
