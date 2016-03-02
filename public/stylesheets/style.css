@@ -1,7 +1,58 @@
 /* index */
+body {
+  background-color: #fffdfd;
+}
+
+
+.navbar-default, .panel-footer, a {
+  background-color: #f2ecec;
+  color:#12127d;
+}
 .page-header {
   text-align:center;
+  color: #b20000;
 }
+.page-header-text {
+  color:#12127d;
+}
+.btn-default{
+  background-color:#f2ecec;
+  color:#12127d;
+}
+
+
+
+.signupKetchup {
+  color:#b20000;
+}
+
+.signupForm {
+  color: #12127d
+}
+
+.aptCollector {
+  box-shadow: .2rem .2rem .4rem .2rem #dbd7d7;
+  background-color: #f2ecec;
+}
+
+.moreInfo {
+  display: none;
+}
+
+div[id^="map"]{
+  height: 30rem;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

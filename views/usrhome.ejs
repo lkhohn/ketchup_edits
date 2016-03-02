@@ -6,76 +6,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>ketchUp</title>
 
-  <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title" charset="utf-8">
 
 
-
-  <style media="screen">
-    .aptCollector {
-      display: block;
-      height: auto;
-      box-shadow: .2rem .2rem .4rem .2rem #000000;
-      border: .1rem solid black;
-      z-index: 1;
-      background-color: rgb(255, 255, 255);
-      border-radius: 1rem;
-    }
-
-    .aptHeader {
-      box-shadow: .2rem .1rem .2rem .1rem #000000;
-      background-color: rgb(235, 235, 235);
-      margin-bottom: .2rem;
-      padding-top: .4rem;
-      padding-bottom: .4rem;
-      border-radius: 1rem;
-    }
-
-    .C {
-      background-color: rgb(138, 177, 140);
-    }
-
-    .M {
-      background-color: rgb(232, 227, 155);
-    }
-
-    .R {
-      background-color: rgb(233, 167, 167);
-    }
-
-    .aptHeaderL {
-      margin-bottom: .2rem;
-      padding-top: .4rem;
-      padding-bottom: .4rem;
-      border-radius: 1rem;
-    }
-
-    #yourApts {
-      width: 40%;
-      margin: auto;
-    }
-
-    #invApts {
-      width: 40%;
-      margin: auto;
-    }
-
-    .moreInfo {
-      display: none;
-    }
-    .headerC{
-      width: 40%;
-      margin: auto;
-    }
-    div[id^="map"]{
-      height: 30rem;
-      width: 100%;
-      border-radius: 2rem;
-    }
-  </style>
 </head>
 
 <body>
@@ -107,30 +44,23 @@
     </div>
   </nav>
 
-  <div class="bigBox">
-    <div class="row headerC">
-      <div class="top_Text">
-        <div class="col-md-12">
-          <h2>Your Appointments</h2>
-        </div>
-      </div>
-    </div>
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h2>upcoming <span class="signupKetchup">ketchUps</span></h2>
     <div id="yourApts">
       <%-yourApts %>
     </div>
-
-    <div class="row headerC">
-      <div class="desc_Text">
-        <div class="col-md-12">
-          <h2>Appointments You've Been Invited To</h2>
-        </div>
-      </div>
-    </div>
+    <h2>invited <span class="signupKetchup">ketchUps</span></h2>
     <div id="invApts">
       <%-invApts %>
     </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>
 
-    <div class="panel panel-default">
+
       <div class="panel-footer">
         <div class='row'>
           <div class='col-md-6'>
@@ -152,7 +82,7 @@
         </div>
       </div>
     </div>
-  </div>
+
 
 
 

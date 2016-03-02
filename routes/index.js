@@ -4,7 +4,7 @@ var router = express.Router();
 var account = require('../local_modules/accounts');
 var knex = require('knex')({
   client: 'pg',
-  connection: process.env.DATABASE_URL
+  connection: process.env.DATABASE_LOCAL
 });
 
 /******
@@ -110,7 +110,7 @@ router.get('/signup', function(req, res, next) {
 router.post('/signup', function(req, res, next) {
   // for registration page
   var userSubmission = req.body;
-  //console.log(userSubmission);
+  // console.log(userSubmission);
   knex('users').where({
     //what you would like to search for
   }).then(function(users) {
@@ -118,12 +118,12 @@ router.post('/signup', function(req, res, next) {
     var valid = account().isValidAccount(res, userSubmission, users);
     switch (valid) {
       case 0:
+        res.send('invalid password');
         res.redirect('/signup');
-        //res.send('invalid password');
         break;
       case 1:
+        res.send('invalid username');
         res.redirect('/signup');
-        //res.send('invalid username');
         break;
       case 2:
         knex.insert({
