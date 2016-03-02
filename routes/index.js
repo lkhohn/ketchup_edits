@@ -4,7 +4,7 @@ var router = express.Router();
 var account = require('../local_modules/accounts');
 var knex = require('knex')({
   client: 'pg',
-  connection: process.env.DATABASE_REMOTE
+  connection: process.env.DATABASE_URL
 });
 
 /******
