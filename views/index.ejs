@@ -11,75 +11,58 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title" charset="utf-8">
-
-
+<link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic,300italic,100,100italic,300' rel='stylesheet' type='text/css'>
 </head>
 
-
-
 <body>
+
+  <article class='navHeaderSection'>
+
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href= <%=linkHome %> >ketchUp</a>
+        <a class="navbar-brand" id="navBarLinks" href= <%=linkHome %> >ketchUp</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul id='nav' class="nav navbar-nav">
-          <li class='active'><a href= <%=linkHome %> >home <span class="sr-only"</span></a></li>
-          <li><a href= <%=linkApt %> >schedule a meeting</a></li>
-        </ul>
-        <ul id='nav' class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%-username %> <span class="caret"></span></a>
-            <ul id='nav' class="dropdown-menu">
-              <li><a href= <%=linkPref %> >preferences</a></li>
-              <li role="separator" class="divider"></li>
-              <li>
-                <a href= <%=linkLogout %>
-                  <span class="badge"></span>
-                  <span class="glyphicon glyphicon-off" aria-hidden="true"></span> log out</a>
-              </li>
-            </ul>
-          </li>
+          <li><a id="navBarLinks" href= <%=linkHome %> >home</a></li>
+          <li><a id="navBarLinks" href= <%=linkApt %> >schedule a meeting</a></li>
         </ul>
       </div>
     </div>
   </nav>
-<!-- END NAVBAR AREA__________________________________________________-->
 
-  <div class="page-header">
-    <h1>ketchUp <small class="page-header-text">a tool for scheduling meetings</small></h1>
+  <div class="jumbotron">
+    <h1><span class="page-header-text-main">ketchUp</span> <br><span class="page-header-text">a tool for scheduling meetings</span></h1>
     <a class="btn btn-default" href="login" role="button">login</a>
     <a class="btn btn-default" href="signup" role="button">signup</a>
   </div>
 
-
-    <div class="panel-footer">
-      <div class='row'>
-        <div class='col-md-6'>
-          <ul class='panel-footer-left'>
-            <ol><a href= <%=linkHome %> >home </a></ol>
-            <ol><a href= <%=linkApt %> >schedule a meeting</a></ol>
-            <ol><a href= <%=linkPref %> >preferences</a></ol>
-          </ul>
-        </div>
-        <div class='col-md-6'>
-          <ul class='panel-footer-right'>
-            <ol>designed by</ol>
-            <ol><a href='https://github.com/micah-eberhard'>Micah Eberhard </a></ol>
-            <ol><a href='https://github.com/KeenanHoffman'>Keenan Hoffman </a></ol>
-            <ol><a href='https://github.com/lkhohn'>Lindsay Hohn </a></ol>
-            <ol><a href='https://github.com/James80401'>James Shield </a></ol>
-          </ul>
-        </div>
+  <div class="panel-footer">
+    <div class='row'>
+      <div class='col-md-6'>
+        <ul class='panel-footer-left'>
+          <ol><a class="footerLinks" href= <%=linkHome %> >home </a></ol>
+          <ol><a class="footerLinks" href= <%=linkApt %> >schedule a meeting</a></ol>
+          <ol><a class="footerLinks" href= <%=linkPref %> >preferences</a></ol>
+        </ul>
+      </div>
+      <div class='col-md-6'>
+        <ul class='panel-footer-right' style="color:#fffdfd">
+          <ol>designed by</ol>
+          <ol><a href='https://github.com/micah-eberhard' class="footerLinks">Micah Eberhard </a></ol>
+          <ol><a href='https://github.com/KeenanHoffman' class="footerLinks">Keenan Hoffman </a></ol>
+          <ol><a href='https://github.com/lkhohn' class="footerLinks">Lindsay Hohn </a></ol>
+          <ol><a href='https://github.com/James80401' class="footerLinks">James Shield </a></ol>
+        </ul>
       </div>
     </div>
+  </div>
 
+</article>
 
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 </html>

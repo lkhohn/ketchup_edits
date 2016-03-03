@@ -11,31 +11,31 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css" media="screen" title="no title" charset="utf-8">
-
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 </head>
 
 
 <body>
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" id="userNav">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href= <%=linkHome %> >ketchUp</a>
+        <a id="userNav" class="navbar-brand" href= <%=linkHome %> >ketchUp</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul id='nav' class="nav navbar-nav">
-          <li class='active'><a href= <%=linkHome %> >home <span class="sr-only"</span></a></li>
-          <li><a href= <%=linkApt %> >schedule a meeting</a></li>
+          <li><a id="userNav" href= <%=linkHome %> >home </a></li>
+          <li><a id="userNav" href= <%=linkApt %> >schedule a meeting</a></li>
         </ul>
         <ul id='nav' class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">account <span class="caret"></span></a>
+            <a id="userNav" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">account <span class="caret"></span></a>
             <ul id='nav' class="dropdown-menu">
               <li><a href= <%=linkPref%> >preferences</a></li>
               <li role="separator" class="divider"></li>
               <li>
-                <a href= <%=linkLogout %>
+                <a id="userNav" href= <%=linkLogout %>
                   <span class="badge"></span>
                   <span class="glyphicon glyphicon-off" aria-hidden="true"></span> log out</a>
               </li>
@@ -55,76 +55,77 @@
       </div>
     </div>
 
-    <div class="container">
-      <form class="form-horizontal">
-        <div class="form-group" id='form-group-pref'>
-          <label for="inputUser3" class="col-sm-2 control-label">User ID</label>
-          <div class="col-sm-8">
-            <input type="text" class="form-control" id="inputUser3" placeholder="update your userID">
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class='col-md-8'>
 
-        <div class="form-group" id='form-group-pref'>
-          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-          <div class="col-sm-8">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="update your email">
-          </div>
-        </div>
+        <form class="form-horizontal">
 
-        <div class="form-group" id='form-group-pref'>
-          <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-          <div class="col-sm-8">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="update your password">
+          <div class="form-group" id='form-group-pref'>
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-8">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="update your email">
+            </div>
           </div>
-        </div>
 
-        <div class="form-group" id='form-group-pref'>
-          <label for="locationUser3" class="col-sm-2 control-label">Default Location</label>
-          <div class="col-sm-8">
-            <input type="text" class="form-control" id="locationUser3" placeholder="update your default location">
+          <div class="form-group" id='form-group-pref'>
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-8">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="update your password">
+            </div>
           </div>
-        </div>
 
-        <div class="form-group" id='form-group-pref'>
-          <label for="restaurantPrefUser3" class="col-sm-2 control-label">Favorite Meeting Location</label>
-          <div class="col-sm-8">
-            <input type="text" class="form-control" id="restaurantPrefUser3" placeholder="update your favorite meeting location">
+          <div class="form-group" id='form-group-pref'>
+            <label for="locationUser3" class="col-sm-2 control-label">Default Location</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="locationUser3" placeholder="update your default location">
+            </div>
           </div>
-        </div>
 
-        <div class="form-group" id='form-group-pref'>
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">save changes</button>
+          <div class="form-group" id='form-group-pref'>
+            <label for="restaurantPrefUser3" class="col-sm-2 control-label">Favorite Meeting Location</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="restaurantPrefUser3" placeholder="update your favorite meeting location">
+            </div>
           </div>
-        </div>
 
-      </form>
+          <div class="form-group" id='form-group-pref'>
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">save changes</button>
+            </div>
+          </div>
+
+        </form>
     </div>
-
   </div>
+  <div class="col-md-2"></div>
 
-  <div class="panel panel-default">
-    <div class="panel-footer">
-      <div class='row'>
-        <div class='col-md-6'>
-          <ul class='panel-footer-left'>
-            <ol><a href= <%=linkHome %> >home </a></ol>
-            <ol><a href= <%=linkApt %> >schedule a meeting</a></ol>
-            <ol><a href= <%=linkPref %> >preferences</a></ol>
-          </ul>
-        </div>
-        <div class='col-md-6'>
-          <ul class='panel-footer-right'>
-            <ol>designed by</ol>
-            <ol><a href='https://github.com/micah-eberhard'>Micah Eberhard </a></ol>
-            <ol><a href='https://github.com/KeenanHoffman'>Keenan Hoffman </a></ol>
-            <ol><a href='https://github.com/lkhohn'>Lindsay Hohn </a></ol>
-            <ol><a href='https://github.com/James80401'>James Shield </a></ol>
-          </ul>
-        </div>
+</div>
+
+
+
+  <div class="panel-footer" id="userNav">
+    <div class='row'>
+      <div class='col-md-6'>
+        <ul class='panel-footer-left'>
+          <ol><a id="userNav" href= <%=linkHome%> >home </a></ol>
+          <ol><a id="userNav" href= <%=linkApt%> >schedule a meeting</a></ol>
+          <ol><a id="userNav" href= <%=linkPref%> >preferences</a></ol>
+        </ul>
+      </div>
+      <div class='col-md-6' id="userNav">
+        <ul class='panel-footer-right'>
+          <ol>designed by</ol>
+          <ol><a id="userNav" href='https://github.com/micah-eberhard'>Micah Eberhard </a></ol>
+          <ol><a id="userNav" href='https://github.com/KeenanHoffman'>Keenan Hoffman </a></ol>
+          <ol><a id="userNav" href='https://github.com/lkhohn'>Lindsay Hohn </a></ol>
+          <ol><a id="userNav" href='https://github.com/James80401'>James Shield </a></ol>
+        </ul>
       </div>
     </div>
   </div>
+</div>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

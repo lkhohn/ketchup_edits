@@ -102,7 +102,7 @@ router.get('/usrhome/', function(req, res){
               '</div>' +
               '<div class = "row moreInfo" style="display: none;">'+
                 //'<div class="col-md-1">'+'</div>'+
-                '<div class="col-md-12">'+row.description+'</div>' +
+                '<div class="col-md-12">'+"meeting description: "+row.description+'</div>' +
                 '<div class="col-md-12" lat="'+row.loc_lat+'" lng="'+row.loc_lng+'" id="map'+mapIdx+'">'+'</div>' +
               '</div>'
             ;
