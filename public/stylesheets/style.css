@@ -5,29 +5,29 @@ body {
 }
 
 .navHeaderSection {
-    background-image:url(https://images.unsplash.com/1/bag-and-hands.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c7e4433b55700a7d33d63dd62f810b6f);
-    background-position:center;
-    background-size:100% auto;
+  background-image:url(https://images.unsplash.com/1/bag-and-hands.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c7e4433b55700a7d33d63dd62f810b6f);
+  background-position:center;
+  background-size:100% auto;
 }
 
 .navHeaderSectionNonMain {
-display: block;
-position: relative;
+  display: block;
+  position: relative;
 }
-.navHeaderSectionNonMain::after{
-background-image:url(https://images.unsplash.com/1/bag-and-hands.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c7e4433b55700a7d33d63dd62f810b6f);
-background-position:center;
-background-size:100% auto;
-background-position: 50% 0;
-opacity: 0.5;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-position: absolute;
-z-index: -1;
-content: "";
 
+.navHeaderSectionNonMain::after{
+  background-image:url(https://images.unsplash.com/1/bag-and-hands.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c7e4433b55700a7d33d63dd62f810b6f);
+  background-position:center;
+  background-size:100% auto;
+  background-position: 50% 0;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  content: "";
 }
 
 .navbar-default, .panel-footer {
@@ -64,13 +64,12 @@ content: "";
   font-weight: 900;
   color: #b20000;
   text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;
-
 }
+
 .btn-default{
   background-color:#f2ecec;
   color:#12127d;
 }
-
 
 /* Sign up page */
 .signupKetchup {
@@ -79,8 +78,12 @@ content: "";
 
 .signupForm {
   color: #12127d;
+  margin-bottom:75px;
 }
 
+#loginForm {
+  margin-bottom: 225px;
+}
 /* user specific pages */
 .userHomeHeader {
 color:#12127d;
@@ -90,7 +93,6 @@ color:#12127d;
   background-color:#f2ecec;
   color:#12127d;
 }
-
 
 .aptCollector {
   box-shadow: .2rem .2rem .4rem .2rem #dbd7d7;
@@ -110,46 +112,41 @@ div[id^="map"]{
   padding-bottom:100px;
 }
 
-
-
-
 #userAptSch{
   padding-bottom: 100px;
 }
 
-
-/* LINDSAY EDITS */
 #map {
   height: 500px;
   width: 600px;
 }
 
-
 /*aptSch form */
 input.form-control {
   margin:2em;
 }
+
 button.btn-default {
   margin:2em;
 }
+
  h1.aptSchHeader {
    text-align:center;
    padding-bottom:0.5em;
    color:#12127d;
-
  }
-
 
 /* pref page */
 .prefHeader {
   text-align: center;
   color:#12127d;
 }
+
 #form-group-pref {
   margin-top: 0.5em;
   color:#12127d;
-
 }
+
 .col-sm-2 {
   margin-top:2em;
   margin-right:-2em;

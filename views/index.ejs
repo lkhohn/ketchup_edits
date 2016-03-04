@@ -18,51 +18,51 @@
 
   <article class='navHeaderSection'>
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" id="navBarLinks" href= <%=linkHome %> >ketchUp</a>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" id="navBarLinks" href= <%=linkHome %> >ketchUp</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul id='nav' class="nav navbar-nav">
+            <li><a id="navBarLinks" href= <%=linkHome %> >home</a></li>
+            <li><a id="navBarLinks" href= <%=linkApt %> >schedule a meeting</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul id='nav' class="nav navbar-nav">
-          <li><a id="navBarLinks" href= <%=linkHome %> >home</a></li>
-          <li><a id="navBarLinks" href= <%=linkApt %> >schedule a meeting</a></li>
-        </ul>
+    </nav>
+
+    <div class="jumbotron">
+      <h1><span class="page-header-text-main">ketchUp</span> <br><span class="page-header-text">a tool for scheduling meetings</span></h1>
+      <a class="btn btn-default" href="login" role="button">login</a>
+      <a class="btn btn-default" href="signup" role="button">signup</a>
+    </div>
+
+    <div class="panel-footer">
+      <div class='row'>
+        <div class='col-md-6'>
+          <ul class='panel-footer-left'>
+            <ol><a class="footerLinks" href= <%=linkHome %> >home </a></ol>
+            <ol><a class="footerLinks" href= <%=linkApt %> >schedule a meeting</a></ol>
+            <ol><a class="footerLinks" href= <%=linkPref %> >preferences</a></ol>
+          </ul>
+        </div>
+        <div class='col-md-6'>
+          <ul class='panel-footer-right' style="color:#fffdfd">
+            <ol>designed by</ol>
+            <ol><a href='https://github.com/micah-eberhard' class="footerLinks">Micah Eberhard </a></ol>
+            <ol><a href='https://github.com/KeenanHoffman' class="footerLinks">Keenan Hoffman </a></ol>
+            <ol><a href='https://github.com/lkhohn' class="footerLinks">Lindsay Hohn </a></ol>
+            <ol><a href='https://github.com/James80401' class="footerLinks">James Shield </a></ol>
+          </ul>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <div class="jumbotron">
-    <h1><span class="page-header-text-main">ketchUp</span> <br><span class="page-header-text">a tool for scheduling meetings</span></h1>
-    <a class="btn btn-default" href="login" role="button">login</a>
-    <a class="btn btn-default" href="signup" role="button">signup</a>
-  </div>
+  </article>
 
-  <div class="panel-footer">
-    <div class='row'>
-      <div class='col-md-6'>
-        <ul class='panel-footer-left'>
-          <ol><a class="footerLinks" href= <%=linkHome %> >home </a></ol>
-          <ol><a class="footerLinks" href= <%=linkApt %> >schedule a meeting</a></ol>
-          <ol><a class="footerLinks" href= <%=linkPref %> >preferences</a></ol>
-        </ul>
-      </div>
-      <div class='col-md-6'>
-        <ul class='panel-footer-right' style="color:#fffdfd">
-          <ol>designed by</ol>
-          <ol><a href='https://github.com/micah-eberhard' class="footerLinks">Micah Eberhard </a></ol>
-          <ol><a href='https://github.com/KeenanHoffman' class="footerLinks">Keenan Hoffman </a></ol>
-          <ol><a href='https://github.com/lkhohn' class="footerLinks">Lindsay Hohn </a></ol>
-          <ol><a href='https://github.com/James80401' class="footerLinks">James Shield </a></ol>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-</article>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 </html>

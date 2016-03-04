@@ -35,48 +35,46 @@
       </div>
     </nav>
 
-
-  <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4" class="signupForm">
-      <h1 class="signupForm">sign in for <span class="signupKetchup">ketchUp</span></h1>
-      <form action="/login" method="post" class="signupForm">
-        <div class="form-group">
-          <label for="username">username</label>
-          <input type="text" name="username" class="form-control"></input>
-        </div>
-        <div class="form-group">
-          <label for="password">password</label>
-          <input type="password" name="password" class="form-control"></input>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-        </div>
-      </form>
-    </div>
-    <div class="col-md-4"></div>
-  </div>
-
-
-  <div class="panel-footer">
-    <div class='row'>
-      <div class='col-md-6'>
-        <ul class='panel-footer-left'>
-          <ol><a class="footerLinks" href= <%=linkHome %> >home </a></ol>
-          <ol><a class="footerLinks" href= <%=linkApt %> >schedule a meeting</a></ol>
-          <ol><a class="footerLinks" href= <%=linkPref %> >preferences</a></ol>
-        </ul>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4" class="signupForm" id="loginForm">
+        <h1 class="signupForm">sign in for <span class="signupKetchup">ketchUp</span></h1>
+        <form action="/login" method="post" class="signupForm">
+          <div class="form-group">
+            <label for="username">username</label>
+            <input type="text" name="username" class="form-control"></input>
+          </div>
+          <div class="form-group">
+            <label for="password">password</label>
+            <input type="password" name="password" class="form-control"></input>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </form>
       </div>
-      <div class='col-md-6'>
-        <ul class='panel-footer-right'>
-          <ol>designed by</ol>
-          <ol><a href='https://github.com/micah-eberhard' class="footerLinks">Micah Eberhard </a></ol>
-          <ol><a href='https://github.com/KeenanHoffman' class="footerLinks">Keenan Hoffman </a></ol>
-          <ol><a href='https://github.com/lkhohn' class="footerLinks">Lindsay Hohn </a></ol>
-          <ol><a href='https://github.com/James80401' class="footerLinks">James Shield </a></ol>
-        </ul>
+      <div class="col-md-4"></div>
+    </div>
+
+    <div class="panel-footer">
+      <div class='row'>
+        <div class='col-md-6'>
+          <ul class='panel-footer-left'>
+            <ol><a class="footerLinks" href= <%=linkHome %> >home </a></ol>
+            <ol><a class="footerLinks" href= <%=linkApt %> >schedule a meeting</a></ol>
+            <ol><a class="footerLinks" href= <%=linkPref %> >preferences</a></ol>
+          </ul>
+        </div>
+        <div class='col-md-6'>
+          <ul class='panel-footer-right'>
+            <ol>designed by</ol>
+            <ol><a href='https://github.com/micah-eberhard' class="footerLinks">Micah Eberhard </a></ol>
+            <ol><a href='https://github.com/KeenanHoffman' class="footerLinks">Keenan Hoffman </a></ol>
+            <ol><a href='https://github.com/lkhohn' class="footerLinks">Lindsay Hohn </a></ol>
+            <ol><a href='https://github.com/James80401' class="footerLinks">James Shield </a></ol>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
 
   </article>
 
