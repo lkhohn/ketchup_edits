@@ -60,9 +60,11 @@ content: "";
 }
 
 .page-header-text-main {
-  font-size:84px;
-  font-weight: 700;
+  font-size:150px;
+  font-weight: 900;
   color: #b20000;
+  text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;
+
 }
 .btn-default{
   background-color:#f2ecec;
@@ -133,6 +135,8 @@ button.btn-default {
  h1.aptSchHeader {
    text-align:center;
    padding-bottom:0.5em;
+   color:#12127d;
+
  }
 
 
