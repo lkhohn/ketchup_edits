@@ -8,4 +8,8 @@ templates for index.js Express routes, wireframes and all styling, and calendar 
 KetchUp is a tool for scheduling meetings. The main features of the application including storing user’s calendar information
 and allowing the user to schedule a meeting location based on the user’s geolocation to the closest Starbucks.
 
-https://lkh-ketchup.herokuapp.com/
+https://ketchup-meeting.herokuapp.com/
+
+![home page](http://i.imgur.com/qGhvpux.png)
+![sign up](http://i.imgur.com/vpFnras.png)
+![schedule a meeting](http://i.imgur.com/EbEZvBH.png)
