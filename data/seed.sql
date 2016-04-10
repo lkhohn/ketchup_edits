@@ -1,4 +1,4 @@
--- INSERT INTO ~table name~ (name) VALUES(test);
+ -- INSERT INTO ~table name~ (name) VALUES(test);
 
 
 INSERT INTO locations VALUES(default, 'Starbucks');
